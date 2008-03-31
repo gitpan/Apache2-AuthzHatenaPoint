@@ -1,0 +1,33 @@
+NAME
+    Apache2::AuthzHatenaPoint - a module to authorize http clients with
+    hatena point.
+
+SYNOPSIS
+      LoadModule perl_module modules/mod_perl.so
+      PerlLoadModule Apache2::AuthenOpenID
+      PerlLoadModule Apache2::AuthzHatenaPoint
+
+      AuthType          OpenID
+      AuthName          "My private documents"
+      return_to         http://sample.com/path/to/callback
+      trust_root        http://sample.com/your/trust_root/
+      consumer_secret   "your consumer secret"
+      require           hatenapoint 10000
+      hatenapoint       username    your_username
+      hatenapoint       password    your_password
+      hatenapoint       after       2008-03-28
+      hatenapoint       sentuserdb  /path/to/.htsentuserdb
+
+DESCRIPTION
+    Apache2::AuthzHatenaPoint is a module to authorize http client with
+    hatena point.
+
+AUTHOR
+    Author <nobuo.danjou@gmail.com>
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+SEE ALSO
+    Apache2::AuthenOpenID <http://openid.net> <http://www.hatena.ne.jp>
+

@@ -1,0 +1,13 @@
+PerlLoadModule Apache2::AuthenOpenID
+PerlLoadModule Apache2::AuthzHatenaPoint
+<Location />
+    AuthType OpenID
+    AuthName "Apache2::AuthzHatenaPoint test"
+    return_to /callback
+    trust_root /
+    consumer_secret "this is consumer_secret sample"
+    require hatenapoint 10
+    hatenapoint after 2008-03-28
+    hatenapoint username sample
+    hatenapoint password sample
+</Location>
