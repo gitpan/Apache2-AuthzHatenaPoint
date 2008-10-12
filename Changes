@@ -1,4 +1,8 @@
 Revision history for Perl extension Apache2::AuthzHatenaPoint
 
+0.02  Sun Oct 12 15:15:00 2008
+	- now needs ModPerl::MM and Apache::TestMM to run perl Makefile.PL.
+	- use inc::Module::Install;
+
 0.01  Fri Mar 28 14:49:40 2008
 	- original version

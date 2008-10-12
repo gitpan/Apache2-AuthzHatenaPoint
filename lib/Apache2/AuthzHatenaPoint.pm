@@ -14,7 +14,7 @@ use WWW::HatenaLogin;
 use Web::Scraper;
 use DB_File;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 
 __PACKAGE__->init;
